@@ -4,7 +4,6 @@ def upper_case(c):
         return (ord(c) - 32)
     else:
         return ord(c)
-
 def uppercase(str):
     new = ""
     for c in str:
