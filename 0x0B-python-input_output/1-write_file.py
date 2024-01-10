@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""Write file module"""
+"""Defines write_file module"""
 
 def write_file(filename="", text=""):
     """
@@ -7,5 +7,5 @@ def write_file(filename="", text=""):
     writes a string to a text file (UTF8)
     """
 
-    with open(filename, mode='w', encoding="utf-8") as f:
-        return f.write(text)
+    with open(filename, mode="w", encoding="utf-8") as my_file:
+        return my_file.write(text)
