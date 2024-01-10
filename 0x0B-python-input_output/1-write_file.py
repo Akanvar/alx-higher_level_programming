@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """Defines write_file module"""
 
+
 def write_file(filename="", text=""):
     """
     write_file function
