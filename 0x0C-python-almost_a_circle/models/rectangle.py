@@ -1,57 +1,77 @@
 #!/usr/bin/python3
-"""Creates a subclass of Base superclass """
+"""Rectangle class implement Base class """
+
 
 from models.base import Base
 
+
 class Rectangle(Base):
-    """Sub-class of the Base super class
+    """ rectangle class implement Base class
     """
 
     def __init__(self, width, height, x=0, y=0, id=None):
-        """initializing a constructer for Rectangle class
-        """
-        
         self.width = width
         self.height = height
         self.x = x
         self.y = y
-
         super().__init__(id)
 
-        @property
-        def width(self):
-            return self.__width
+    @property
+    def width(self):
+        """
+            Returning private attribute (__width)
+        """
+        return self.__width
 
-        @width.setter
-        def width(self, value):
-            self.setter_validation("width", value)
-            self.__width = value
+    @width.setter
+    def width(self, value):
+        """
+            Setting private attribute (__width)
+        """
+        # self.setter_validation("width", value)
+        self.__width = value
 
-        @property
-        def height(self):
-            return self.__height
+    @property
+    def height(self):
+        """
+            Returning private attribute (___height)
+        """
+        return self.__height
 
-        @height.setter
-        def height(self, value):
-            self.setter_validation("height", value)
-            self.__height = value
+    @height.setter
+    def height(self, value):
+        """
+            Setting private attribute (__height)
+        """
+        # self.setter_validation("height", value)
+        self.__height = value
 
-        @property
-        def x(self):
-            return self.__x
+    @property
+    def x(self):
+        """
+            Returning private attribute (__x)
+        """
+        return self.__x
 
-        @x.setter
-        def x(self, value):
-            self.setter_validation("x", value)
-            self.__x = value
+    @x.setter
+    def x(self, value):
+        """
+            Setting private attribute (__x)
+        """
+        # self.setter_validation("x", value)
+        self.__x = value
 
-        @property
-        def y(self):
-            return self.__y
+    @property
+    def y(self):
+        """
+            Returning private attribute (__y)
+        """
+        return self.__y
 
-        @y.setter
-        def y(self, value):
-            self.setter_validation("y", value)
-            selx.__y = value
-
-
+    @y.setter
+    def y(self, value):
+        """
+            Setting private attribute (__y)
+        """
+        # self.setter_validation("y", value)
+        self.__y = value
