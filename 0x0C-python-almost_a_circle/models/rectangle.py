@@ -87,3 +87,17 @@ class Rectangle(Base):
         elif value <= 0:
             raise ValueError("{} must be > 0".format(attribute))
 
+
+    def area(self):
+        """returns the area of the Rectangle instance
+        """
+        return self.height * self.width
+
+
+
+
+
+
+
+
+
