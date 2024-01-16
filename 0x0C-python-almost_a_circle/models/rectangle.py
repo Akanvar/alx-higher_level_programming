@@ -11,12 +11,12 @@ class Rectangle(Base):
         """initializing a constructer for Rectangle class
         """
         
-        super().__init__(id)
-
         self.width = width
         self.height = height
         self.x = x
         self.y = y
+
+        super().__init__(id)
 
         @property
         def width(self):
