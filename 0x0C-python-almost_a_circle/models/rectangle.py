@@ -103,6 +103,14 @@ class Rectangle(Base):
             print()
 
 
+    def __str__(self):
+        """Creating new `__str__` method
+        """
+
+        return "[Rectangle] ({0.id}) {0.x}/{0.y} - {0.width}/{0.height}".format(self)
+
+
+
 
 
 
