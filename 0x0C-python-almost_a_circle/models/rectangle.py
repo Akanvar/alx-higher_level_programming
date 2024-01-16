@@ -110,6 +110,24 @@ class Rectangle(Base):
         return "[Rectangle] ({0.id}) {0.x}/{0.y} - {0.width}/{0.height}".format(self)
 
 
+    def update(self, *args, **kwargs):
+        """
+            Updates the arguments props in the class
+        """
+        if len(args) == 0:
+            for key, val in kwargs.items():
+                self.__setattr__(key, val)
+            return
+        try:
+            self.id = args[0]
+            self.width = args[1]
+            self.height = args[2]
+            self.x = args[3]
+            self.y = args[4]
+        except IndexError:
+            pass
+
+
 
 
 
