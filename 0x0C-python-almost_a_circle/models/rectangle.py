@@ -96,12 +96,12 @@ class Rectangle(Base):
 
     def display(self):
         """prints in stdout the Rectangle instance with the `#` character """
-
-        for h in range(self.height):
-            for w in range(self.width):
-                print("#", end="")
-            print()
-
+        
+        rectangle = ""
+        print("\n" * self.y, end="")
+        for i in range(self.height):
+            rectangle += (" " * self.x) + ("#" * self.width) + "\n"
+        print(rectangle, end="")
 
     def __str__(self):
         """Creating new `__str__` method
