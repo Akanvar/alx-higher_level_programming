@@ -128,7 +128,7 @@ class Rectangle(Base):
             pass
 
     
-       def to_dictionary(self):
+    def to_dictionary(self):
         """
             Returns a dictionary representation of this class
         """
